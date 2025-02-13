@@ -1,5 +1,5 @@
 # To-Do List
-Overview:<br>
+
 This To-Do List website allows users to add, edit, delete, and filter tasks based on their completion status. The tasks include a description, due date, and due time.
 
 HTML (index.html)<br>
