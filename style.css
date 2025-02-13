@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, violet, purple);
+}
+.container {
+  font-family: "Poppins", sans-serif;
+  width: 95vw;
+  max-width: 500px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+  padding: 30px 40px;
+  background-color: #f1f8fb;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 0.8em;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#add-task {
+  position: relative;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+#task-input {
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+}
+#task-input:focus {
+  border: 2px solid rgb(193, 40, 193);
+  box-shadow: 0 0 2px 2px violet;
+}
+#add-btn {
+  font-size: 1rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid purple;
+  color: white;
+  background-color: #c607c6;
+}
+#add-btn:hover {
+  cursor: pointer;
+  background-color: rgb(175, 7, 181);
+}
+#due-date,
+#due-time {
+  height: 2rem;
+  outline: none;
+  padding: 0 0.25rem;
+}
+#due-date:hover,
+#due-time:hover {
+  border: 1px solid rgb(160, 40, 193);
+  box-shadow: 0 0 2px 1px rgb(202, 130, 238);
+}
+.status button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+.status button:hover {
+  cursor: pointer;
+}
+hr {
+  margin: 1.5rem 0;
+}
+.tasks-list {
+  list-style-type: none;
+}
+.task {
+  background-color: rgb(198 198 198 / 45%);
+  display: grid;
+  grid-template-columns: 4% 75% 8% 8%;
+  grid-gap: 2%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.task-check {
+  align-self: center;
+  height: 1.25rem;
+}
+.task-check:hover {
+  cursor: pointer;
+}
+.taskname {
+  align-self: center;
+}
+.task-edit,
+.task-del {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  background-color: rgb(249 180 252 / 25%);
+  color: rgb(175, 7, 181);
+  height: 2rem;
+  border: 1px solid rgb(175, 7, 181);
+}
+.task-edit:hover,
+.task-del:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(175, 7, 181);
+  border: 1px solid white;
+}
+.strikethrough {
+  text-decoration: line-through;
+  color: rgb(95, 95, 95);
+}
+.hide {
+  display: none;
+}
