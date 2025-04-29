@@ -5,7 +5,7 @@
 }
 body {
   height: 100vh;
-  background: linear-gradient(120deg, violet, purple);
+  background: linear-gradient(120deg, #3979c3, #185090);
 }
 .container {
   font-family: "Poppins", sans-serif;
@@ -42,20 +42,20 @@ body {
   padding-left: 0.5rem;
 }
 #task-input:focus {
-  border: 2px solid rgb(193, 40, 193);
-  box-shadow: 0 0 2px 2px violet;
+  border: 1px solid #185090;
+  box-shadow: 0 0 2px 2px #81bcff;
 }
 #add-btn {
   font-size: 1rem;
   height: 2.5rem;
   border-radius: 0.5rem;
-  border: 1px solid purple;
+  border: 1px solid #c93901;
   color: white;
-  background-color: #c607c6;
+  background-color: #fe7743;
 }
 #add-btn:hover {
   cursor: pointer;
-  background-color: rgb(175, 7, 181);
+  background-color: #e6571f;
 }
 #due-date,
 #due-time {
@@ -65,15 +65,15 @@ body {
 }
 #due-date:hover,
 #due-time:hover {
-  border: 1px solid rgb(160, 40, 193);
-  box-shadow: 0 0 2px 1px rgb(202, 130, 238);
+  border: 1px solid #185090;
+  box-shadow: 0 0 2px 1px #81bcff;
 }
 .status button {
   font-size: 1rem;
   padding: 0.75rem;
-  background-color: blueviolet;
+  background-color: #ffbf3b;
   color: white;
-  border: 1px solid purple;
+  border: 1px solid #dda01c;
   border-radius: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -87,7 +87,7 @@ hr {
   list-style-type: none;
 }
 .task {
-  background-color: rgb(198 198 198 / 45%);
+  background-color: rgba(198, 198, 198, 0.348);
   display: grid;
   grid-template-columns: 4% 75% 8% 8%;
   grid-gap: 2%;
@@ -109,16 +109,16 @@ hr {
 .task-del {
   font-size: 1rem;
   border-radius: 0.25rem;
-  background-color: rgb(249 180 252 / 25%);
-  color: rgb(175, 7, 181);
+  background-color: #81bcff29;
+  color: #034a9c;
   height: 2rem;
-  border: 1px solid rgb(175, 7, 181);
+  border: 1px solid #034a9c;
 }
 .task-edit:hover,
 .task-del:hover {
   cursor: pointer;
   color: white;
-  background-color: rgb(175, 7, 181);
+  background-color: #0151ad;
   border: 1px solid white;
 }
 .strikethrough {

@@ -126,9 +126,9 @@ tasksList.addEventListener("click", (event) => {
 
 //display all tasks
 allBtn.addEventListener("click", () => {
-  allBtn.style.backgroundColor = "#c607c6";
-  compBtn.style.backgroundColor = "blueviolet";
-  incompBtn.style.backgroundColor = "blueviolet";
+  allBtn.style.backgroundColor = "#fe7743";
+  compBtn.style.backgroundColor = "#ffbf3b";
+  incompBtn.style.backgroundColor = "#ffbf3b";
   document.querySelectorAll(".task").forEach((task) => {
     task.classList.remove("hide");
   });
@@ -136,9 +136,9 @@ allBtn.addEventListener("click", () => {
 
 //display completed tasks
 compBtn.addEventListener("click", () => {
-  allBtn.style.backgroundColor = "blueviolet";
-  compBtn.style.backgroundColor = "#c607c6";
-  incompBtn.style.backgroundColor = "blueviolet";
+  allBtn.style.backgroundColor = "#ffbf3b";
+  compBtn.style.backgroundColor = "#fe7743";
+  incompBtn.style.backgroundColor = "#ffbf3b";
   document.querySelectorAll(".task").forEach((task) => {
     if (task.classList[1] == "incomp") {
       task.classList.add("hide");
@@ -150,9 +150,9 @@ compBtn.addEventListener("click", () => {
 
 //display incomppete task
 incompBtn.addEventListener("click", () => {
-  allBtn.style.backgroundColor = "blueviolet";
-  compBtn.style.backgroundColor = "blueviolet";
-  incompBtn.style.backgroundColor = "#c607c6";
+  allBtn.style.backgroundColor = "#ffbf3b";
+  compBtn.style.backgroundColor = "#ffbf3b";
+  incompBtn.style.backgroundColor = "#fe7743";
   document.querySelectorAll(".task").forEach((task) => {
     if (task.classList[1] == "comp") {
       task.classList.add("hide");
