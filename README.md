@@ -45,10 +45,10 @@ This To-Do List website allows users to add, edit, delete, and filter tasks base
   - Handles the checkbox change event.
   - Strikes through the task name and updates the task's class based on its completion status.
 - `tasksList.addEventListener("click", ...)`:
-  - Handles the delete button click event.<br>
-  - Removes the task from the list and calls taskSeparator().<br>
-  - Handles the edit button click event.<br>
-  - Removes the task from the list and populates the input fields with the task's details for editing.<br>
+  - Handles the delete button click event.
+  - Removes the task from the list and calls taskSeparator().
+  - Handles the edit button click event.
+  - Removes the task from the list and populates the input fields with the task's details for editing.
 - `allBtn.addEventListener("click", ...)`:
   - Displays all tasks.
   - Updates the background colour of the status buttons.
